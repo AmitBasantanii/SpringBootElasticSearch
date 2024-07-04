@@ -16,11 +16,17 @@ public class Product {
     @Field(type = FieldType.Text, name = "name")
     private String name;
 
+    @Field(type = FieldType.Text, name = "category")
+    private String cateory;
+
     @Field(type = FieldType.Text, name = "description")
     private String description;
 
     @Field(type = FieldType.Double, name = "price")
     private double price;
+
+    @Field(type = FieldType.Boolean, name = "stock")
+    private Boolean inStock;
 
 
     // Getter and Setter
@@ -56,5 +62,21 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String getCateory() {
+        return cateory;
+    }
+
+    public void setCateory(String cateory) {
+        this.cateory = cateory;
+    }
+
+    public Boolean getInStock() {
+        return inStock;
+    }
+
+    public void setInStock(Boolean inStock) {
+        this.inStock = inStock;
     }
 }
